@@ -1,3 +1,4 @@
+
 (firebase.auth().onAuthStateChanged(user => {
     if (user) {
 
@@ -64,6 +65,15 @@
         var x = document.querySelectorAll(".tab-from-group");
         x[0].style.display = "block";
 
+        $('a').on('click', function (e) {
+
+            e.preventDefault();
+            $("#aForm").attr("href")
+            document.getElementById('aForm1').style.cursor = "no-drop";
+            document.getElementById('aForm2').style.cursor = "no-drop";
+            document.getElementById('aForm3').style.cursor = "no-drop";
+            document.getElementById('aForm4').style.cursor = "no-drop";
+        });
     }
 
 
@@ -107,3 +117,4 @@ function check(BtnLogIn) {
 
 
 };
+
