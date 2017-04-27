@@ -19,8 +19,6 @@ $(document).ready(function() {
         var snap = snapshot.val();
 
 
-
-
         Highcharts.chart('container', {
             chart: {
                 type: 'spline',
