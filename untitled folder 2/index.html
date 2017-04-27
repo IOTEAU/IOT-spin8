@@ -4,16 +4,17 @@
 <head>
 
 
-    <script src="https://www.gstatic.com/firebasejs/3.8.0/firebase.js"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/3.9.0/firebase.js"></script>
     <script>
         // Initialize Firebase
         var config = {
-            apiKey: "AIzaSyBSsGf8k4YCdKoHHEmQzl65St4RJr22d_E",
-            authDomain: "testqueue-aaa05.firebaseapp.com",
-            databaseURL: "https://testqueue-aaa05.firebaseio.com",
-            projectId: "testqueue-aaa05",
-            storageBucket: "testqueue-aaa05.appspot.com",
-            messagingSenderId: "729091499252"
+            apiKey: "AIzaSyDCM1ZDEa4256l5uaN_8s8Lqb8rOFkd_qk",
+            authDomain: "test1-59b46.firebaseapp.com",
+            databaseURL: "https://test1-59b46.firebaseio.com",
+            projectId: "test1-59b46",
+            storageBucket: "test1-59b46.appspot.com",
+            messagingSenderId: "179860541723"
         };
     </script>
 
@@ -61,19 +62,21 @@
 
 
 
-            // console.log(stac)
+            console.log(stac)
 
         }
 
 
         function outTime() {
             var upToFirebase = dbFirebase.ref('num')
+            upToFirebase.set(stac.shift(0));
             setInterval(function() {
                 var valToFirebase = stac.shift()
-                    // console.log(stac)
+                console.log(stac)
                 upToFirebase.set(valToFirebase);
+                console.log(valToFirebase)
             }, 10000);
-            // console.log(valToFirebase)
+
 
         }
     </script>
