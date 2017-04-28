@@ -22,25 +22,51 @@ var numPerples = numPerple.on('value', function(snapshot) {
     var snap = snapshot.val();
     var num0 = 0;
     if (snap <= num0) {
-        var x = document.querySelectorAll(".check-status");
-        x[0].innerHTML = "สถานะไม่ใช้งาน";
-        x[1].innerHTML = "สถานะไม่ใช้งาน";
-        x[2].innerHTML = "สถานะไม่ใช้งาน";
-        x[3].innerHTML = "สถานะไม่ใช้งาน";
-        x[4].innerHTML = "สถานะไม่ใช้งาน";
-        x[5].innerHTML = "สถานะไม่ใช้งาน";
-        x[6].innerHTML = "สถานะไม่ใช้งาน";
-        x[7].innerHTML = "สถานะไม่ใช้งาน";
+        var x = document.querySelectorAll("#button");
+        //S LED //
+        x[0,1,2,3,4,5,6,7].style.display = "block";
+        var x = document.querySelectorAll("#button1");
+        //S AIR //
+        x[0,1,2,3,4,5,6,7].style.display = "none";
+        
+
+        
     } else {
-        var x = document.querySelectorAll(".check-status");
-        x[0].innerHTML = "กำลังใช้งาน";
-        x[1].innerHTML = "กำลังใช้งาน";
-        x[2].innerHTML = "กำลังใช้งาน";
-        x[3].innerHTML = "กำลังใช้งาน";
-        x[4].innerHTML = "กำลังใช้งาน";
-        x[5].innerHTML = "กำลังใช้งาน";
-        x[6].innerHTML = "กำลังใช้งาน";
-        x[7].innerHTML = "กำลังใช้งาน";
+        var x = document.querySelectorAll("#button");
+        //S101 LED //
+        x[0].style.display = "none";
+        //S101 AIR //
+        x[1].style.display = "none";
+        //S102 LED //
+        x[2].style.display = "none";
+        //S102 AIR //
+        x[3].style.display = "none";
+        //S103 LED //
+        x[4].style.display = "none";
+        //S103 AIR //
+        x[5].style.display = "none";
+        //S104 LED //
+        x[6].style.display = "none";
+        //S104 AIR //
+        x[7].style.display = "none";
+
+        var x = document.querySelectorAll("#button1");
+        //S101 LED //
+        x[0].style.display = "block";
+        //S101 AIR //
+        x[1].style.display = "block";
+        //S102 LED //
+        x[2].style.display = "block";
+        //S102 AIR //
+        x[3].style.display = "block";
+        //S103 LED //
+        x[4].style.display = "block";
+        //S103 AIR //
+        x[5].style.display = "block";
+        //S104 LED //
+        x[6].style.display = "block";
+        //S104 AIR //
+        x[7].style.display = "block";
 
 
     }

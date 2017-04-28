@@ -65,7 +65,7 @@ input:checked+.slider:before {
 }
 
 #button {
-    background-color: #4CAF50; /* Green */
+    background-color: red; 
     border: none;
     color: white;
     padding: 10px 10px;
@@ -74,13 +74,12 @@ input:checked+.slider:before {
     display: inline-block;
     font-size: 16px;
     margin: 4px 2px;
-    -webkit-transition-duration: 0.4s; /* Safari */
-    transition-duration: 0.4s;
-    cursor: pointer;
+    -webkit-transition-duration: 0.4s; 
+    
 }
 
 #button1 {
-    background-color:red; /* red */
+    background-color:green; 
     border: none;
     color: white;
     padding: 10px 10px;
@@ -89,7 +88,25 @@ input:checked+.slider:before {
     display: inline-block;
     font-size: 16px;
     margin: 4px 2px;
-    -webkit-transition-duration: 0.4s; /* Safari */
+    -webkit-transition-duration: 0.4s; 
     transition-duration: 0.4s;
+    
+}
+
+#buttoncursor {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
     cursor: pointer;
+}
+
+.buttondisabled {
+    opacity: 0.6;
+    cursor: not-allowed;
 }

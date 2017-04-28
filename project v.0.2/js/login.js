@@ -53,6 +53,10 @@
             x[1].style.display = "block";
             document.getElementById('room').textContent = "ห้อง S104";
 
+            var x=document.querySelectorAll(".col-md-3")
+            x[0,1,2,3].style.cursor = "no-drop";
+            
+
         }
 
 
