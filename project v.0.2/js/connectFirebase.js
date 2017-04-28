@@ -24,13 +24,13 @@ var numPerples = numPerple.on('value', function(snapshot) {
     if (snap <= num0) {
         var x = document.querySelectorAll("#button");
         //S LED //
-        x[0,1,2,3,4,5,6,7].style.display = "block";
+        x[0, 1, 2, 3, 4, 5, 6, 7].style.display = "block";
         var x = document.querySelectorAll("#button1");
         //S AIR //
-        x[0,1,2,3,4,5,6,7].style.display = "none";
-        
+        x[0, 1, 2, 3, 4, 5, 6, 7].style.display = "none";
 
-        
+
+
     } else {
         var x = document.querySelectorAll("#button");
         //S101 LED //

@@ -1,4 +1,6 @@
 function name() {
+    var num1 = dbFirebase.ref('num');
+    // console.log(num1)
     var para = 10 //เปลี่ยนค่าตรงนี้ เอาค่าจาก Firebase
 
     return para
