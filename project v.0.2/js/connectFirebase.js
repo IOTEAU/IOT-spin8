@@ -33,7 +33,7 @@ var numPerples = numPerple.on('value', function(snapshot) {
 
     } else {
         var x = document.querySelectorAll("#button");
-        //S101 LED //
+        //S101 LED //testSensor
         x[0].style.display = "none";
         //S101 AIR //
         x[1].style.display = "none";
@@ -75,7 +75,7 @@ var numPerples = numPerple.on('value', function(snapshot) {
 });
 
 //random เข้า Firebase
-// var num = dbFirebase.ref('num');
-// setInterval(function() {
-//     num.push(Math.random() * 100)
-// }, 10000)
+var num = dbFirebase.ref('num');
+setInterval(function() {
+    num.push(Math.random() * 100)
+}, 1000)

@@ -1,10 +1,15 @@
 function name() {
-    var num1 = dbFirebase.ref('num');
-    // console.log(num1)
-    var para = 10 //เปลี่ยนค่าตรงนี้ เอาค่าจาก Firebase
+    var para;
+    var num1 = dbFirebase.ref().child('num');
+    num1.on('child_added', function(snapshot) {
+        para = snapshot.val();
+        // console.log(para)
 
+    });
     return para
 }
+
+
 
 
 $(document).ready(function() {
@@ -83,7 +88,7 @@ $(document).ready(function() {
                     for (i = -19; i <= 0; i += 1) {
                         data.push({
                             x: time + i * 1000,
-                            y: Math.random()
+                            y: name()
                         });
                     }
                     return data;
@@ -92,3 +97,7 @@ $(document).ready(function() {
         });
     });
 });
+
+
+
+// console.log(name());
